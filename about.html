@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rengin Özder</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/ol@latest/dist/ol.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ol@latest/ol.css">
+    <style>
+        /* Başlık animasyonu */
+        .animated-h2 {
+            opacity: 0;
+            transform: translateY(-20px);
+            animation: slideFadeIn 1s forwards;
+            display: inline-block;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+
+        @keyframes slideFadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Section wrapper */
+        .section-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 1000px;
+            margin: 50px auto;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .section-wrapper img {
+            width: 250px;
+            height: 250px;
+            object-fit: contain;
+        }
+
+        .text-content {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        /* Sağ ve sol hizalama */
+        .img-left { order: -1; }
+        .img-right { order: 1; }
+    </style>
+</head>
+<body>
+    <header>
+        <h2 class="logo"><span>Rengin Özder</span></h2>
+        <nav class="navigation">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="experiences.html">Experiences</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <!-- INTRO -->
+    <section id="intro">
+        <div class="section-wrapper">
+            <div class="text-content">
+                <h1>Hi, I’m Rengin Özder.</h1>
+                <p>
+                    I’m deeply fascinated by the natural world — by what happens both above and below the surface of the Earth.
+                    Since childhood, I’ve been curious about how landscapes evolve and how the planet tells its story through rocks,
+                    water, and space. That passion led me to pursue my lifelong dream: studying Geological Engineering at
+                    <strong>Middle East Technical University (METU)</strong>.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- JOURNEY -->
+    <section id="journey">
+        <div class="section-wrapper">
+            <img src="Metu Sticker by Middle East Technical University.gif" alt="Journey animation" class="img-left">
+            <div class="text-content">
+                <h2 class="animated-h2">How I got here</h2>
+                <p>
+                    I graduated from METU in 2016, and my curiosity for research led me to continue with a master’s degree in the same department.
+                    My thesis, <em>“Responses of Planktonic Foraminifera to Environmental Conditions Across the Cretaceous/Paleogene Boundary in the Göynük Basin”</em>,
+                    allowed me to explore the relationship between ancient microfossils and changing environments. I completed my studies with a 4.0 GPA
+                    — an experience that shaped not only my scientific mindset but also my patience and love for details.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- NOW -->
+    <section id="now">
+        <div class="section-wrapper">
+            <div class="text-content">
+                <h2 class="animated-h2">Where I am now</h2>
+                <p>
+                    Today, I’m studying <strong>Geomatics Engineering at Hacettepe University</strong>, focusing on the intersection of
+                    <strong>hydrogeology</strong> and <strong>geodesy</strong>. My current interest is in combining GNSS techniques with
+                    hydrological observations to address one of the most urgent global challenges: water scarcity.
+                    In a way, I’m connecting the ground and the sky — merging traditional Earth science with modern satellite technology.
+                </p>
+            </div>
+            <img src="odtu_to_hacettepe.gif" alt="Now animation" class="img-right">
+        </div>
+    </section>
+
+    <!-- DRIVES -->
+    <section id="drives">
+        <div class="section-wrapper">
+            <img src="globe GIF.gif" alt="Drives animation" class="img-left">
+            <div class="text-content">
+                <h2 class="animated-h2">What drives me</h2>
+                <p>
+                    People often ask whether it’s scientific curiosity, environmental sustainability, or my connection with nature that keeps me moving.
+                    Honestly — it’s all of them. For me, science is a language that allows us to listen to Earth’s quiet rhythms.
+                    Every dataset, every field observation, every image from orbit feels like a small message from the planet — and I want to understand it.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- BEYOND -->
+    <section id="beyond">
+        <div class="section-wrapper">
+            <div class="text-content">
+                <h2 class="animated-h2">Beyond the work</h2>
+                <p>
+                    Beyond research, I love discovering and creating. I am a <strong>gravure painter</strong>, I enjoy experimenting with <strong>coffee aromas</strong>,
+                    following <strong>film soundtracks</strong>, <strong>reading</strong>, and <strong>cooking</strong>.
+                    During my METU years, I was part of the <strong>Gastronomy Society</strong> and <strong>Ankara Volunteers (AGT)</strong>,
+                    where I found joy in cultural and culinary exploration.  
+                    I’m also a proud member of <strong>Ankara Kültür Gezginleri (Anadolu Kartalları)</strong> — a group dedicated to uncovering
+                    hidden corners of Turkey and the world, always seeking the stories that landscapes have to tell.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FUTURE -->
+    <section id="future">
+<section id="drives">
+    <div class="section-wrapper right-image">
+        <div class="image-container">
+            <img src="customizable-protest-sign-template.png" alt="Drives animation">
+        </div>
+        <div class="text-content">
+            <h2 class="animated-h2">What drives me</h2>
+            <p>
+                People often ask whether it’s scientific curiosity, environmental sustainability, or my connection with nature that keeps me moving.
+                Honestly — it’s all of them. For me, science is a language that allows us to listen to Earth’s quiet rhythms.
+            </p>
+        </div>
+    </div>
+</section>
+
+
+ <footer style="text-align: center; padding: 20px 0;">
+    © 2025 Rengin Özder — Designed with curiosity and care 🌍
+</footer>
+
+
+    <script>
+        // Scroll animation
+        const sections = document.querySelectorAll("section");
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("visible");
+                }
+            });
+        }, { threshold: 0.2 });
+
+        sections.forEach((section) => {
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>
+

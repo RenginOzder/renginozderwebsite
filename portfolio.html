@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rengin Özder Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h2 class="logo"><span>Rengin Özder</span></h2>
+        <nav class="navigation">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="experiences.html">Experiences</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <style>
+        /* Portfolio Kartları */
+        .portfolio-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            padding: 20px 10%;
+        }
+
+        .portfolio-card {
+            position: relative;
+            width: 250px;
+            height: 200px;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            cursor: pointer;
+        }
+
+        .portfolio-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s;
+        }
+
+        .portfolio-card:hover img {
+            transform: scale(1.05);
+        }
+
+        .portfolio-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(60,104,7,0.7);
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .portfolio-card:hover .portfolio-overlay {
+            opacity: 1;
+        }
+
+        /* Lightbox */
+        #lightbox {
+            position: fixed;
+            top:0;
+            left:0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.9);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 10000;
+        }
+
+        #lightbox img {
+            max-width: 90%;
+            max-height: 90%;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Portfolio Section -->
+<section id="portfolio" class="section">
+    <h2>Portfolio</h2>
+    <div class="portfolio-container">
+        <div class="portfolio-card"><img src="Portfolio/CamScanner 21.10.2025 20.19_1.jpg" alt="Gravure 1" onclick="openLightbox(this)"><div class="portfolio-overlay"><p>Gravure 1</p></div></div>
+        <div class="portfolio-card"><img src="Portfolio/CamScanner 21.10.2025 20.19_2.jpg" alt="Gravure 2" onclick="openLightbox(this)"><div class="portfolio-overlay"><p>Gravure 2</p></div></div>
+        <div class="portfolio-card"><img src="Portfolio/CamScanner 21.10.2025 20.19_3.jpg" alt="Gravure 3" onclick="openLightbox(this)"><div class="portfolio-overlay"><p>Gravure 3</p></div></div>
+        <div class="portfolio-card"><img src="Portfolio/CamScanner 21.10.2025 20.19_4.jpg" alt="Gravure 4" onclick="openLightbox(this)"><div class="portfolio-overlay"><p>Gravure 4</p></div></div>
+        <div class="portfolio-card"><img src="Portfolio/CamScanner 21.10.2025 20.19_5.jpg" alt="Gravure 5" onclick="openLightbox(this)"><div class="portfolio-overlay"><p>Gravure 5</p></div></div>
+        <div class="portfolio-card"><img src="Portfolio/CamScanner 21.10.2025 20.19_6.jpg" alt="Gravure 6" onclick="openLightbox(this)"><div class="portfolio-overlay"><p>Gravure 6</p></div></div>
+        <div class="portfolio-card"><img src="Portfolio/CamScanner 21.10.2025 20.19_7.jpg" alt="Gravure 7" onclick="openLightbox(this)"><div class="portfolio-overlay"><p>Gravure 7</p></div></div>
+        <div class="portfolio-card"><img src="Portfolio/CamScanner 21.10.2025 20.19_8.jpg" alt="Gravure 8" onclick="openLightbox(this)"><div class="portfolio-overlay"><p>Gravure 8</p></div></div>
+        <div class="portfolio-card"><img src="Portfolio/CamScanner 21.10.2025 20.19_9.jpg" alt="Gravure 9" onclick="openLightbox(this)"><div class="portfolio-overlay"><p>Gravure 9</p></div></div>
+        <div class="portfolio-card"><img src="Portfolio/CamScanner 21.10.2025 20.19_10.jpg" alt="Gravure 10" onclick="openLightbox(this)"><div class="portfolio-overlay"><p>Gravure 10</p></div></div>
+        <div class="portfolio-card"><img src="Portfolio/CamScanner 21.10.2025 20.19_11.jpg" alt="Gravure 11" onclick="openLightbox(this)"><div class="portfolio-overlay"><p>Gravure 11</p></div></div>
+        <div class="portfolio-card"><img src="Portfolio/CamScanner 21.10.2025 20.19_12.jpg" alt="Gravure 12" onclick="openLightbox(this)"><div class="portfolio-overlay"><p>Gravure 12</p></div></div>
+        <div class="portfolio-card"><img src="Portfolio/CamScanner 21.10.2025 20.19_13.jpg" alt="Gravure 13" onclick="openLightbox(this)"><div class="portfolio-overlay"><p>Gravure 13</p></div></div>
+        <div class="portfolio-card"><img src="Portfolio/CamScanner 21.10.2025 20.19_14.jpg" alt="Gravure 14" onclick="openLightbox(this)"><div class="portfolio-overlay"><p>Gravure 14</p></div></div>
+    </div>
+</section>
+
+<!-- Lightbox -->
+<div id="lightbox" onclick="closeLightbox()">
+    <img id="lightbox-img" src="">
+</div>
+
+<script>
+// Lightbox açma
+function openLightbox(el) {
+    document.getElementById('lightbox').style.display = 'flex';
+    document.getElementById('lightbox-img').src = el.src;
+}
+
+// Lightbox kapama
+function closeLightbox() {
+    document.getElementById('lightbox').style.display = 'none';
+}
+</script>
+
+</body>
+</html>
+
+<footer style="text-align: center; padding: 20px 0;">
+    © 2025 Rengin Özder — Designed with curiosity and care 🌍
+</footer>
